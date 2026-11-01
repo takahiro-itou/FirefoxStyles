@@ -4,8 +4,32 @@
 }
 
 /**
+**  再生・一時停止や閉じるなどのボタンを消去する
+**  ボタンとグラフィックはサイズをゼロにして完全消去。
+**/
+
+button[class*="control"],
+button[id*="control"],
+svg[class*="control"],
+svg[id*="control"],
+button[class*="play"],
+button[id*="play"],
+svg
+{
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/**
 **  コントロールバーの土台の半透明の影を完全に透明にする。
 **/
+
 div[class*="control"],
 div[id*="control"],
 div[class*="wrapper"],
