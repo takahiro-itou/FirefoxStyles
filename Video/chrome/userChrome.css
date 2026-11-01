@@ -8,13 +8,7 @@
 **  ボタンとグラフィックはサイズをゼロにして完全消去。
 **/
 
-button[class*="control"],
-button[id*="control"],
-svg[class*="control"],
-svg[id*="control"],
-button[class*="play"],
-button[id*="play"],
-svg
+button[class*="control"]
 {
     display: none !important;
     opacity: 0 !important;
