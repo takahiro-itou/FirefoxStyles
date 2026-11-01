@@ -2,3 +2,19 @@
 .tabbrowser-tab {
     background-color: red !important;
 }
+
+/**
+**  コントロールバーの土台の半透明の影を完全に透明にする。
+**/
+div[class*="control"],
+div[id*="control"],
+div[class*="wrapper"],
+div[id*="wrapper"],
+.controls-container,
+.controls-wrapper {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
