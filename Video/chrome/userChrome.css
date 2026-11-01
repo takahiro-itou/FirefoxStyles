@@ -1,7 +1,13 @@
-/* userChrome.css が読み込まれているかを確認するテストコード */
+
+/**
+**  userChrome.css が読み込まれているかを確認するテストコード
+**/
+
+/*
 .tabbrowser-tab {
     background-color: red !important;
 }
+*/
 
 /**
 **  再生・一時停止や閉じるなどのボタンを消去する
