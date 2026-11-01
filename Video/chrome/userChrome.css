@@ -25,11 +25,8 @@ button[class*="control"]
 **/
 
 div[class*="control"],
-div[id*="control"],
-div[class*="wrapper"],
-div[id*="wrapper"],
-.controls-container,
-.controls-wrapper {
+div[id*="control"]
+{
     background: transparent !important;
     background-color: transparent !important;
     background-image: none !important;
