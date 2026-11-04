@@ -1,0 +1,41 @@
+
+/**
+**  userChrome.css が読み込まれているかを確認するテストコード
+**/
+
+/*
+.tabbrowser-tab {
+    background-color: red !important;
+}
+*/
+
+/**
+**  再生・一時停止や閉じるなどのボタンを消去する
+**  ボタンとグラフィックはサイズをゼロにして完全消去。
+**/
+
+button[class*="control"]
+{
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/**
+**  コントロールバーの土台の半透明の影を完全に透明にする。
+**/
+
+div[class*="control"],
+div[id*="control"]
+{
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
